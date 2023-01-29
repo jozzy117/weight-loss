@@ -1,0 +1,67 @@
+.slick-slider {
+  width: 100%;
+  margin: auto;
+}
+
+body .slick-prev, 
+body .slick-next {
+  height: 45px;
+  width: 40px;
+  background: grey !important;
+  z-index: 100;
+}
+
+.action-div {
+  background: var(--primary-light);
+  border-radius: 16px;
+  margin-right: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.0790811);
+}
+
+.seeAll {
+  text-decoration: underline;
+}
+
+.activity-actions {
+  gap: 10px;
+  width: 160px;
+  height: 100px;
+}
+.workout-actions {
+  gap: 10px;
+  width: 100%;
+  height: 80px;
+}
+
+.act_img {
+  width: 40px;
+}
+
+.w-50 {
+  width: 50% !important;
+}
+.w-60 {
+  width: 60% !important;
+}
+.w-80 {
+  width: 80% !important;
+}
+
+.progress-bar {
+  background-color: var(--secondary-green) !important;
+}
+
+.page {
+  font-size: var(--heading2) !important;
+}
+
+canvas {
+  width: 100% !important;
+  background: var(--primary-blue);
+  border-radius: 16px;
+  padding: 20px;
+}

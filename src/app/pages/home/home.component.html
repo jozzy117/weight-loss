@@ -1,0 +1,49 @@
+<div class="main-container">
+  <div class="d-flex justify-content-between align-items-center mb-5">
+    <p class="heading-1">My Activity</p>
+    <img src="assets/images/profile-avatar.png" alt="">
+  </div>
+  <div class="mb-5">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="activityConfig">
+      <div ngxSlickItem *ngFor="let activity of activities" class="slide">
+        <div class="action-div activity-actions">
+          <div>
+            <img class="act_img" [src]="activity.img" alt="">
+          </div>
+          <div style="width: 55%;">
+            <span>
+              <p *ngIf="activity.title === 'Left today'"> <span class="heading-2">{{activity.qty}}</span> mins</p>
+              <p class="heading-2" *ngIf="activity.title !== 'Left today'">{{activity.qty}}</p>
+            </span>
+            <p class="paragraph-2">{{activity.title}}</p>
+            <div class="progress">
+              <div  [ngClass]="activity.progress" role="progressbar" aria-label="Basic example"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ngx-slick-carousel>
+  </div>
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <p class="heading-2">Goal for week</p>
+    <p class="page paragraph-2">42 of 54</p>
+  </div>
+  <div class="mb-5">
+    <canvas baseChart
+      [data]="barChartData"
+      [options]="barChartOptions"
+      [legend]="false"
+      [type]="'bar'">
+    </canvas>
+  </div>
+  <div class="d-flex justify-content-between align-items-center mb-5">
+    <p class="heading-2">Trending Workouts</p>
+    <p class="page paragraph-2 seeAll">see all</p>
+  </div>
+  <div class="action-div workout-actions">
+    <img src="assets/images/muscle.PNG" alt="">
+    <p style="width: 60%;" class="heading-3">Muscle Builder</p>
+    <img src="assets/images/play.PNG" alt="">
+  </div>
+</div>
+<app-footer></app-footer>

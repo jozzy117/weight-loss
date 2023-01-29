@@ -1,0 +1,32 @@
+.footer-div {
+  background: var(--primary-light);
+  border-radius: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  padding: 5%;
+  position: relative;
+  margin-top: 5%;
+}
+
+.add {
+  position: absolute;
+  top: -30px;
+  left: 41.5%;
+  z-index: 90;
+}
+
+.my-freaky-tooltip .arrow::before{
+  border-bottom-color: #FFFFFF;
+}
+.my-freaky-tooltip .tooltip-inner{
+  font-size: 1.2rem !important;
+  line-height: 2.4rem !important;
+  background: #FFFFFF;
+  border-radius: 16px;
+  color: var(--iinvest--black003);
+  padding: 16px 24px;
+  filter: drop-shadow(0px 30px 60px rgba(0, 0, 0, 0.0790811));
+  width: 350px;
+  max-width: 500px;
+}

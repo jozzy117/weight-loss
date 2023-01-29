@@ -1,1 +1,84 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* font-size: calc(16px + 1vw); */
+  font-size: 62.5%;
+  /* Color styles */
+  --primary-light: #FFFFFF;
+  --primary-bg: #FAFAFA;
+  --primary-blue: #7B66FF;
+  --secondary-green: #C2FF4D;
+  --black: #000000;
+  --secondary-text: #B3B3B3;
+  
+  
+  /* Text-size styles */
+  --heading1: 2.4rem;
+  --heading2: 1.8rem;
+  --heading3: 1.6rem;
+  --paragraph1: 2rem;
+  --paragraph2: 1rem;
+  
+}
+
+body, p {
+  margin: 0;
+}
+
+.heading-1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--heading1);
+  letter-spacing: 0.75px;
+  color: var(--black);
+}
+
+.heading-2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--heading2);
+  letter-spacing: 0.75px;
+  color: var(--black);
+}
+
+.heading-3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--heading3);
+  letter-spacing: 0.75px;
+  color: var(--black);
+}
+
+.paragraph-1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--paragraph1);
+  letter-spacing: 0.75px;
+  color: var(--black);
+}
+
+.paragraph-2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--paragraph2);
+  letter-spacing: 0.75px;
+  color: var(--secondary-text);
+}
+
+.main-container {
+  background-color: var(--primary-bg);
+  width: 100vw;
+  height: 100vh;
+  border-radius: 20px;
+  padding: 15% 5%;
+}
+
+* {
+  box-sizing: border-box;
+}
